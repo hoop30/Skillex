@@ -70,6 +70,7 @@ body {
 }
 
 .top-bar {
+    position: sticky;
     display: grid;
     justify-content: space-between;
     grid-template-columns: 225px 710px 225px;
@@ -223,6 +224,9 @@ body {
 }
 .carton h4 {
     margin-bottom: 10px;
+}
+.carton-box:hover h4 {
+    color: #92c77a;
 }
 
 .txt {
