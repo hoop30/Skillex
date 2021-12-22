@@ -7,14 +7,27 @@
     text-decoration: none;
     color: black;
 }
-h1, h2, h3,p {
+h1, h2, h3, h4,p {
     font-family: 'ABeeZee', sans-serif;
     font-weight: 800;
     
 }
+h1 {
+    font-size: 80px;
+}
+h2{
+    font-size: 41px;
+}
+h3 {
+    font-size: 30px;
+}
+h4 {
+    font-size: 22px;
+    font-weight: 600;
+}
 body {
     background: linear-gradient(0deg, rgba(213,197,184,1) 0%, rgba(227,232,238,1) 100%);
-    height: 100vh;
+    height: fit-content;
     display: flex;
     justify-content: center;
 }
@@ -42,13 +55,16 @@ body {
 }
 
 .cadre {
-    width: 1200px;
+    width: 1160px;
     height: fit-content;
-    background-color: white;
-    padding: 0 50px;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 20%, rgba(244,242,238,1) 100%);
+    padding: 0 55px;
     border-radius: 30px;
     position: relative;
     top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .top-bar {
@@ -88,18 +104,56 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 500px;
+    height: 600px;
+    margin-bottom: 120px;
 }
+.flex-txt {
+    position: relative;
+    width: 350px;
+    height: 435px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.go {
+    position: absolute;
+    bottom: 0px;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 300px 110px;
+    grid-template-rows: 110px;
+    width: 410px;
+}
+.go div {
+    height: 110px;
+    display: flex;
+    align-items: center;
+}
+.go div:first-child {
+    background: white;
+    padding-left: 50px;
+}
+.go div:last-child {
+    background: #92c77a;
+    text-align: center;   
+}
+.go h3 {
+    text-align: center;
+    width: 110px;
+}
+
 .flex-img {
-    width: 800px;
+    width: 810px;
     display: flex;
     justify-content: space-between;
     gap: 2rem;
 }
 .img {
     overflow: hidden;
-    height: 500px;
+    height: 600px;
     width: 33%;
+    border-radius: 20px;
 }
 .img:hover {
     width: 100%;
@@ -107,4 +161,68 @@ body {
 .img img {
     height: 100%;
     width: auto;
+}
+
+.txt-unlimited {
+    display: flex;
+    margin-bottom: 50px;
+}
+.vert {
+    color: #92c77a;
+}
+.categories {
+    display: flex;
+    justify-content: space-between;
+    width: 630px;
+    margin-bottom: 75px;
+}
+
+.carton {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 130px;
+}
+.carton-img {
+    width: 270px;
+    height: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.img1 {
+    height: 270px;
+    background-image: url(img/catron1.jpg);
+}
+.img2 {
+    height: 310px;
+    background-image: url(img/catron2.jpg);
+}
+.img3 {
+    height: 380px;
+    background-image: url(img/catron3.jpg);
+}
+.img4 {
+    height: 270px;
+    background-image: url(img/catron4.jpg);
+}
+.carton h4 {
+    margin-bottom: 10px;
+}
+
+.txt {
+    display: flex;
+    align-self: flex-start;
+    margin-bottom: 50px;
+}
+.h3 {
+    width: 365px;
+    margin-right: 230px;
+}
+.txt p {
+    width: 475px;
+}
+.h3-flex {
+    display: flex;
 }
