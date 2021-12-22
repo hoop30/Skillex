@@ -361,9 +361,47 @@ video {
 /*place holder*/
 
 footer {
-    height: 240px;
-    width: 1270px;
+    height: 210px;
+    width: 1160px;
     background: white;
     position: relative;
     top: 70px;
+    padding: 50px 55px 30px 55px;
+}
+.haut {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+.haut img {
+    width: 131px;
+    height: 39px;
+}
+footer nav {
+    display: grid;
+    grid-template-columns: 180px 180px;
+    grid-template-rows: 50px 50px;
+}
+.footer-contact h4 {
+    margin-bottom: 15px;
+}
+.email {
+    display: grid;
+    grid-template-columns: 210px 60px;
+    grid-template-rows: 60px;
+    width: 270px;
+    height: 60px;
+}
+.email input, .email button {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 0px;
+}
+.email button {
+    border: hidden;
+    background: #92c77a;
+}
+.email input {
+    border: solid 1px gray;
 }
