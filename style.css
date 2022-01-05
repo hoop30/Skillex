@@ -348,9 +348,12 @@ video {
     display: flex;
     position: relative;
     left: 55px;
-    justify-content: space-between;
     gap: 30px;
     margin-bottom: 50px;
+    transition: 1s;
+}
+.transform {
+    transform: translate(-500px);
 }
 .customer-box {
     width: 230px;
@@ -365,26 +368,21 @@ video {
 .profil-holder {
     display: flex;
 }
-.img-holder {
+.img-profil {
     width: 40px;
     height: 40px;
-    background: green;
-    border-radius: 50px;
-    margin-right: 20px;
-}
-.txt-holder {
-    color:grey;
-    background: grey;
+    margin-right: 15px;
 }
 .arrow {
     display: flex;
     gap: 50px;
     margin-bottom: 100px;
 }
-.arrow div {
+.arrow img {
     width: 20px;
     height: 20px;
-    background: gray;
+    cursor: pointer;
+    padding: 10px;
     border-radius: 50px;
 }
 /*place holder*/
